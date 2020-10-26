@@ -96,8 +96,54 @@ def post_movie(payload):
         'movie': movie.id
         })
 
-# TODO PATCH /actors/ and /movies/
+@app.route('/actors/<id>', methods=['PATCH'])
+@requires_auth('patch:actors')
+def update_actor(payload, id):
+    actor = Actor.query.filter_by(id=id).one_or_none()
+    if actor is None:
+        abort(404)
+    else:
+        JSON_body = request.get_json()
+        name = JSON_body.get('name')
+        age = JSON_body.get('age')
+        image_link = JSON_body.get('image_link')
+        gender = JSON_body.get('gender') # :)
+        if name is not None:
+            actor.name = name
+        if age is not None:
+            actor.age = age
+        if image_link is not None:
+            actor.image_link = image_link
+        if gender is not None:
+            actor.gender = gender                        
+        actor.update()
+        return jsonify({
+            'success': True,
+            'actor': actor.short()
+        })
 
+@app.route('/movies/<id>', methods=['PATCH'])
+@requires_auth('patch:movies')
+def update_movies(payload, id):
+    movie = Movie.query.filter_by(id=id).one_or_none()
+    if movie is None:
+        abort(404)
+    else:
+        JSON_body = request.get_json()
+        title = JSON_body.get('title')
+        release_date = JSON_body.get('release_date')
+        poster_link = JSON_body.get('poster_link')
+        if title is not None:
+            movie.title = title
+        if release_date is not None:
+            movie.release_date = release_date
+        if poster_link is not None:
+            movie.poster_link = poster_link                      
+        movie.update()
+        return jsonify({
+            'success': True,
+            'movie': movie.short()
+        })
 
 # Error Handling
 

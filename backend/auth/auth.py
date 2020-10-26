@@ -5,9 +5,9 @@ from jose import jwt
 from urllib.request import urlopen
 
 
-AUTH0_DOMAIN = '' # TODO change
+AUTH0_DOMAIN = 'udacitycastingagency.eu.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = '' # TODO change
+API_AUDIENCE = 'castingAgency'
 
 # AuthError Exception
 '''

@@ -20,7 +20,7 @@ def get_actors():
         actors = Actor.query.all()
         return jsonify({
             'success': True,
-            'drinks': [actor.short() for actor in actors]
+            'actors': [actor.short() for actor in actors]
         })
     except Exception:
         abort(500)
@@ -32,7 +32,7 @@ def get_movies():
         movies = Movie.query.all()
         return jsonify({
             'success': True,
-            'drinks': [movie.short() for movie in movies]
+            'actors': [movie.short() for movie in movies]
         })
     except Exception:
         abort(500)

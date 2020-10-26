@@ -1,1 +1,33 @@
 # Main branch
+
+# Auth users
+## User 1:
+```
+Type:
+Casting Assistant
+Email:
+castingAssis@castingagency.com
+Password:
+iamCastingAssis@
+```
+## User 2:
+```
+Type:
+Casting Director
+Email:
+castingDirector@castingagency.com
+Password:
+iamCastingDirector@
+```
+## User 3:
+```
+Type:
+Casting Producer
+Email:
+castingProducer@castingagency.com
+Password:
+iamCastingProducer@
+```
+Direct login link:
+https://udacitycastingagency.eu.auth0.com/authorize?audience=castingAgency&response_type=token&client_id=3ABxPK2MGT0K6vxWuHTqQnaCWBKYMMcX&redirect_uri=localhost
+

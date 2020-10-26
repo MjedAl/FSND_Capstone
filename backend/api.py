@@ -78,7 +78,7 @@ def post_actors(payload):
     actor.insert()
     return jsonify({
         'success': True,
-        'actor': actor.id
+        'actor_id': actor.id
         })
 
 @app.route('/movies', methods=['POST'])
@@ -93,7 +93,7 @@ def post_movie(payload):
     movie.insert()
     return jsonify({
         'success': True,
-        'movie': movie.id
+        'movie_id': movie.id
         })
 
 @app.route('/actors/<id>', methods=['PATCH'])

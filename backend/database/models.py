@@ -34,17 +34,21 @@ def db_drop_and_create_all():
     db.drop_all()
     db.create_all()
 
-'''
-Drink
-a persistent drink entity, extends the base SQLAlchemy Model
-'''
+
+# Relation between Actor and Movies is Many-To-Many so we need a thrid table to control their relation
+ActorInMovie = db.Table('ActorInMovie',
+    db.Column('actor_id', db.Integer, db.ForeignKey('actor.id'), primary_key=True),
+    db.Column('movie_id', db.Integer, db.ForeignKey('movie.id'), primary_key=True)
+)
+
 class Movie(db.Model):
     id = Column(Integer, primary_key=True)
     title = Column(String(80), unique=True)
     release_date =  Column(String(80), nullable=False)
     poster_link = db.Column(db.String(500))
-    actors = db.relationship('Actor', backref='movie')
-
+    actors = db.relationship("Actor",
+                               secondary=ActorInMovie,
+                               cascade='all, delete')
     def short(self):
         return {
             'id': self.id,
@@ -72,8 +76,6 @@ class Actor(db.Model):
     age =  Column(String(80), nullable=False)
     image_link = db.Column(db.String(500))
     gender =  Column(String(10), nullable=False)
-    movies = db.relationship('Movie', backref='actor')
-
     def short(self):
         return {
             'id': self.id,

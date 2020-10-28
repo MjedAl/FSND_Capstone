@@ -11,13 +11,15 @@ app = Flask(__name__)
 setup_db(app)
 CORS(app)
 
-
+db_drop_and_create_all()
 
 @app.route('/actors', methods=['GET'])
 @requires_auth('get:actors')
-def get_actors():
+def get_actors(payload):
     try:
         actors = Actor.query.all()
+        if actors is None:
+            abort(404)
         return jsonify({
             'success': True,
             'actors': [actor.short() for actor in actors]
@@ -27,19 +29,24 @@ def get_actors():
 
 @app.route('/movies', methods=['GET'])
 @requires_auth('get:movies')
-def get_movies():
+def get_movies(payload):
     try:
+        app.logger.warning('test')
         movies = Movie.query.all()
+        app.logger.warning(movies)
+        if movies is None:
+            abort(404)
         return jsonify({
             'success': True,
             'actors': [movie.short() for movie in movies]
         })
-    except Exception:
+    except Exception as e:
+        app.logger.warning(str(e))
         abort(500)
 
 @app.route('/movies/<movie_id>', methods=['DELETE'])
 @requires_auth('delete:movies')
-def delete_movies(movie_id):
+def delete_movies(payload, movie_id):
     try:
         movie = Movie.query.filter_by(id=movie_id).one_or_none()
         if movie is None:
@@ -53,7 +60,7 @@ def delete_movies(movie_id):
 
 @app.route('/actors/<actor_id>', methods=['DELETE'])
 @requires_auth('delete:actors')
-def delete_actors(actor_id):
+def delete_actors(payload, actor_id):
     try:
         actor = Actor.query.filter_by(id=actor_id).one_or_none()
         if actor is None:
@@ -68,6 +75,7 @@ def delete_actors(actor_id):
 @app.route('/actors', methods=['POST'])
 @requires_auth('post:actors')
 def post_actors(payload):
+    app.logger.warning(request)
     JSON_body = request.get_json()
     name = JSON_body.get('name')
     age = JSON_body.get('age')
@@ -96,10 +104,10 @@ def post_movie(payload):
         'movie_id': movie.id
         })
 
-@app.route('/actors/<id>', methods=['PATCH'])
+@app.route('/actors/<actor_id>', methods=['PATCH'])
 @requires_auth('patch:actors')
-def update_actor(payload, id):
-    actor = Actor.query.filter_by(id=id).one_or_none()
+def update_actor(payload, actor_id):
+    actor = Actor.query.get(actor_id)
     if actor is None:
         abort(404)
     else:
@@ -122,10 +130,10 @@ def update_actor(payload, id):
             'actor': actor.short()
         })
 
-@app.route('/movies/<id>', methods=['PATCH'])
+@app.route('/movies/<movie_id>', methods=['PATCH'])
 @requires_auth('patch:movies')
-def update_movies(payload, id):
-    movie = Movie.query.filter_by(id=id).one_or_none()
+def update_movies(payload, movie_id):
+    movie = Movie.query.get(movie_id)
     if movie is None:
         abort(404)
     else:

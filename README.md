@@ -1,6 +1,16 @@
-# Main branch
+# About the project:
+This is my final project for Udacity full stack nano-degree course, it's a deployed API with Authentication for managing casting agency, you can add movies, actors and manage them base on the role you have.
 
-# Auth users
+# Backend Docs:
+[View the README.md within ./backend for more details.](./backend/README.md)
+
+
+# Login information
+## Login link:
+```
+Direct login link:
+https://udacitycastingagency.eu.auth0.com/authorize?audience=castingAgency&response_type=token&client_id=3ABxPK2MGT0K6vxWuHTqQnaCWBKYMMcX&redirect_uri=http://localhost:5000/
+```
 ## User 1:
 ```
 Type:
@@ -34,6 +44,4 @@ iamCastingProducer@
 Token:
 eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzFkN2ZhMDk1ZjAwNzUyMzY3MTIiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTY2MTE3LCJleHAiOjE2MDQwNTI1MTcsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.qljS08tcUuSwwBP_Q5KM9SsdKXhCkbPlJhUhcgcaCbbiOF9uyA-HirQw3vQH6xrOwmzSqHl1Z1mojedolmhcOMk27Yna6GxsexBAMZO4LM4d_MMoRbh2RL3MWV_PipZWScBt1aZCTcWw3FbB9g_FSKrDq5VLMg5iTO3PY43ynDwf8FX2awqfdGKmtKkIzDA3LFxU3kzUSC1A3BOeZtmQCZtms0JPqh9sV8YkGo-zNU5CTtg6-HPmm5fF0Fe-iwvLBlj_Qy4u_D-XEt0ULDPC2BCX_t4TdAV1RgYp6NYpcEL3s6ob6tRFEGbFY1AzZPElSKA_92_TMbgAu2Nb2dUYzQ
 ```
-Direct login link:
-https://udacitycastingagency.eu.auth0.com/authorize?audience=castingAgency&response_type=token&client_id=3ABxPK2MGT0K6vxWuHTqQnaCWBKYMMcX&redirect_uri=http://localhost:5000/
 

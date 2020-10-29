@@ -14,6 +14,7 @@ CORS(app)
 
 db_drop_and_create_all()
 
+
 @app.route('/actors', methods=['GET'])
 @requires_auth('get:actors')
 def get_actors(payload):
@@ -27,6 +28,7 @@ def get_actors(payload):
         })
     except Exception:
         abort(500)
+
 
 @app.route('/movies', methods=['GET'])
 @requires_auth('get:movies')
@@ -42,6 +44,7 @@ def get_movies(payload):
     except Exception as e:
         abort(500)
 
+
 @app.route('/movies/<movie_id>', methods=['DELETE'])
 @requires_auth('delete:movies')
 def delete_movies(payload, movie_id):
@@ -56,6 +59,7 @@ def delete_movies(payload, movie_id):
     except Exception:
         abort(500)
 
+
 @app.route('/actors/<actor_id>', methods=['DELETE'])
 @requires_auth('delete:actors')
 def delete_actors(payload, actor_id):
@@ -69,6 +73,7 @@ def delete_actors(payload, actor_id):
         })
     except Exception:
         abort(500)
+
 
 @app.route('/actors', methods=['POST'])
 @requires_auth('post:actors')
@@ -86,20 +91,22 @@ def post_actors(payload):
         'actor_id': actor.id
         })
 
+
 @app.route('/movies', methods=['POST'])
 @requires_auth('post:movies')
 def post_movie(payload):
     JSON_body = request.get_json()
     title = JSON_body.get('title')
-    release_date = JSON_body.get('release_date')
-    poster_link = JSON_body.get('poster_link')
+    rel_date = JSON_body.get('release_date')
+    pos_link = JSON_body.get('poster_link')
 
-    movie = Movie(title=title, poster_link=poster_link, release_date=release_date)
+    movie = Movie(title=title, poster_link=pos_link, release_date=rel_date)
     movie.insert()
     return jsonify({
         'success': True,
         'movie_id': movie.id
         })
+
 
 @app.route('/actors/<actor_id>', methods=['PATCH'])
 @requires_auth('patch:actors')
@@ -112,7 +119,7 @@ def update_actor(payload, actor_id):
         name = JSON_body.get('name')
         age = JSON_body.get('age')
         image_link = JSON_body.get('image_link')
-        gender = JSON_body.get('gender') # :)
+        gender = JSON_body.get('gender')
         if name is not None:
             actor.name = name
         if age is not None:
@@ -126,6 +133,7 @@ def update_actor(payload, actor_id):
             'success': True,
             'actor': actor.short()
         })
+
 
 @app.route('/movies/<movie_id>', methods=['PATCH'])
 @requires_auth('patch:movies')

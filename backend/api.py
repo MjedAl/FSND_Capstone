@@ -39,7 +39,7 @@ def get_movies(payload):
             abort(404)
         return jsonify({
             'success': True,
-            'actors': [movie.short() for movie in movies]
+            'movies': [movie.short() for movie in movies]
         })
     except Exception as e:
         abort(500)

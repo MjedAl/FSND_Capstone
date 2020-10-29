@@ -1,0 +1,1084 @@
+{
+	"info": {
+		"_postman_id": "ad679652-3316-4312-b069-2bb5ebbcdadf",
+		"name": "udacity-castingagency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Casting Assistant",
+			"item": [
+				{
+					"name": "POST actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e7f1f65b-ad7d-45e9-a878-f912c5c285dc",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Simon baker",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "51",
+									"type": "text"
+								},
+								{
+									"key": "image_link",
+									"value": "https://media.elcinema.com/uploads/_315x420_a69a34befad80bce5c55227c2671e84a9d4a48fa011fe85f5bbd0e807fffb530.jpg",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/actors",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "58069f19-b5a9-4550-92fc-31a4215065af",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0a271d1a-58b5-4091-b94b-14bd89ea733b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a7daacdd-2e7d-4563-a087-f3ae12f2a7df",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/actors",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c0589288-7a8b-4b87-9706-6cdec81b4888",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/actors/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch movies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e364534c-029b-4477-bb95-0f6c12cfad25",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3ed421ef-7eee-4210-bfb5-14912d781e05",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "88a58b3b-062a-40f8-adae-434b6ef4da59",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/actors/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+<<<<<<< HEAD
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzExZmM1ZmI2MzAwNzk2NGIxOGUiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTY2MDMyLCJleHAiOjE2MDQwNTI0MzIsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.DvHpGwcae9PRTtJX9qiK_qVWEHyzV7EkA-uQx7rxNC5nKtgBapJHeK4PBL3yULFDrxAAMj5hhO3HujB_u5j9m3q7C3esZf1MbMZGObX9fqI6Tm4ais23wef_9dC8S9nM8aQyU1Qy99YMhf1GgCQy6Z3_LN5tXl1ablhizKNJzKDGpvyoJnRjCNAO0C60UJ-102aV7jE0qWAkhqjHoPzAAjuhZ7xMHpK1vppqVguYJmG0pXZEXN3vOf9KW7N1NUVuiuimHCne8IymZKXiUKNmIQgEj_IFQdDv8HJtRI55nirC-ZHN0PMbN16P8HrN5Pn-p7BQ2Rx3W9G894KfVi9Oiw",
+=======
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzExZmM1ZmI2MzAwNzk2NGIxOGUiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTIxOTYwLCJleHAiOjE2MDM5MjkxNjAsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.T42GLJZIyUmjFWsWdk1dHP2IwLJmlRFEchBVjQHcbWWD_zJyxPok6eo7nS1z_ydgAQvo1M65ECmyZnKZ-ijHHW44R3beoAh3wkSBnTDg6_ewYcu72yM1jJmne7wuPlw6BU7w6Br6TVpJIdrPwtWe49OtKtroNVHQtsqJ20GtmZGGYHI9-XZteewN8T-KsuJ156r7X2IOqXWmMpT50lBsK-QOWs2BQWdyFht1d45n1F2DU1NDCLdsxCGhZQMhKdhps9zZkfGm1wG7dl5mzLfnuhGtTBticQttFBh7HR4aAPUySEI7i4IKLT87HjIQu6VUp5MmKIl7kLYCFvSSUB_EeA",
+>>>>>>> dev
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d0f0e896-ab9f-44b6-b5b6-be83336b6d1c",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1eb4c0dd-7466-4c55-9533-61700063a0ba",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Casting Director",
+			"item": [
+				{
+					"name": "POST movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "90ddbb8e-a64c-45d9-ba3b-62845e04832f",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "590c6238-3f85-47a9-9e69-08ab593ab508",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Simon baker\",\r\n    \"age\": \"51\",\r\n    \"gender\": \"male\",\r\n    \"image_link\": \"https://media.elcinema.com/uploads/_315x420_a69a34befad80bce5c55227c2671e84a9d4a48fa011fe85f5bbd0e807fffb530.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/actors",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d63a582b-4345-41fd-b37c-f292674eedc5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0234922a-029f-437f-8d2d-580e3ec520d4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/actors",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8fe18f97-2641-4687-bc91-1b07dc18f1fa",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Simon baker\",\r\n    \"age\": \"52\",\r\n    \"gender\": \"male\",\r\n    \"image_link\": \"https://media.elcinema.com/uploads/_315x420_a69a34befad80bce5c55227c2671e84a9d4a48fa011fe85f5bbd0e807fffb530.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/actors/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch movies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "334b7635-419a-454b-9198-aa66c146b893",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies/99",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"99"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6ede41a6-5dc0-49c8-b2dd-af4c8991cba3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/actors/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "28a111fe-f9f4-416a-9b78-c7064602bcd1",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+<<<<<<< HEAD
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzFjNmM1ZmI2MzAwNzk2NGI1M2YiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTY2MDg1LCJleHAiOjE2MDQwNTI0ODUsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.CGEhzQs5YYcpb0uZ8s1lP1LWeih8UCCp0c5n8qZJoSYXq9_h3kZM3ubgSy0XoptraAhTicAMstbjBLapV-MBYP88X0O3mP88X31G0tjQ27Ddbll7TzWd78OvbVdWYzVUkBoUnjHgvvglvZj2eN6xX0rsaXq004vtYhZ2RjBS8DuBVUoRVW98G5aJhiG7mTACcB8kCK4fRTgygqWhNsiRxLrsfGJEx-iFzo2TtiMDenThxlvX8yNuB4QXzp2mAeVc5AccHh4JxcWE2vVUPm--o_NQLkfPM9p5-37RriXPOyuHLhraptaJzsEltSXiIfnetRq3uFRfc2oExCpW4GILvQ",
+=======
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzFjNmM1ZmI2MzAwNzk2NGI1M2YiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTIyMDc1LCJleHAiOjE2MDM5MjkyNzUsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.Q-dcwEg0_km-kadSR45UT_KC0fHawu2OMVHzIU_gj7R3lAD7TLKb64JS_bFym7bifGZ5_kfzu1tAlr4vJ1SpNOjGC-KxcwTmtRkJPG85Uol6BLVjtD3wQgSVfQMqqa9hQQCkR4IOyODrpzVvfiNEuGSOkEzUoUZSLWpETElao5FiiRhovy1gkrJxtqkcRTRcPiNrfNGiKJ6mfLDNz638p_kXvv2Px7nzBfjUE7t3cTGGGuAvg8-JCHuIpFjS5g_1T0FySWFWOYgcjTiaZf9ig2nj-6sr-8zT-yx7fSnPI5QWMPUscpMgARlr19PRvY8HD4ESu8-AwU10oDXDvNOaUQ",
+>>>>>>> dev
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4bf177c4-5a90-4aab-8c5c-cd42dff34b18",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "b0d99d6c-a9aa-429f-ac61-24eb0546ae58",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Casting Producer",
+			"item": [
+				{
+					"name": "POST movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "41233a36-7b94-4e5d-9216-b45ff027375f",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Iron man\",\r\n    \"release_date\": \"2008\",\r\n    \"poster_link\": \"https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/movies",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Iron man1",
+									"disabled": true
+								},
+								{
+									"key": "release_date",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "poster_link",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "63646710-348a-4551-bcac-697746870a8c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Michael C. Hall\",\r\n    \"age\": \"49\",\r\n    \"gender\": \"male\",\r\n    \"image_link\": \"https://upload.wikimedia.org/wikipedia/commons/7/7b/Michael_C._Hall_Comic-Con_2012.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/actors",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "32158e42-ce9f-423c-b778-5cd0ed078117",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a5f0dc46-86bf-42dd-ac77-5c4f2189e019",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/actors",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8ddba472-3b5a-4404-9962-783f4e357dcc",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Michael C. Hall\",\r\n    \"age\": \"50\",\r\n    \"gender\": \"male\",\r\n    \"image_link\": \"https://upload.wikimedia.org/wikipedia/commons/7/7b/Michael_C._Hall_Comic-Con_2012.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/actors/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch movies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "597c7208-1965-40b2-a894-866aa9dc86b6",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Iron man 1\",\r\n    \"release_date\": \"2008\",\r\n    \"poster_link\": \"https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/movies/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE actor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "20ca4c66-f3e5-42e7-89d7-73659ed52d94",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/actors/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE movie",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4885057b-bfb1-4d83-8a26-4154b81cabba",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/movies/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+<<<<<<< HEAD
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzFkN2ZhMDk1ZjAwNzUyMzY3MTIiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTY2MTE3LCJleHAiOjE2MDQwNTI1MTcsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.qljS08tcUuSwwBP_Q5KM9SsdKXhCkbPlJhUhcgcaCbbiOF9uyA-HirQw3vQH6xrOwmzSqHl1Z1mojedolmhcOMk27Yna6GxsexBAMZO4LM4d_MMoRbh2RL3MWV_PipZWScBt1aZCTcWw3FbB9g_FSKrDq5VLMg5iTO3PY43ynDwf8FX2awqfdGKmtKkIzDA3LFxU3kzUSC1A3BOeZtmQCZtms0JPqh9sV8YkGo-zNU5CTtg6-HPmm5fF0Fe-iwvLBlj_Qy4u_D-XEt0ULDPC2BCX_t4TdAV1RgYp6NYpcEL3s6ob6tRFEGbFY1AzZPElSKA_92_TMbgAu2Nb2dUYzQ",
+=======
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzFkN2ZhMDk1ZjAwNzUyMzY3MTIiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTIyMTE4LCJleHAiOjE2MDM5MjkzMTgsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.ZP1P2jW4gF1HCUZ8Br-WCVBn3N2dkMcVG51qAmqfx8zKeaeNqshfjjBXT4cIY_PQy5_1vfnoZyK66F3GdFsp5u5L3dauHR5oBumSgWtgY3GT_1u2WbL4jKhysEo9ih3f83WwgJLeWdoqknvh4vYCOfa1ce54NLYYSHizDRUplojCid4VuU2eW-4rXS6xvYqZmHc2BLmulHUG3aulcSQSeB_GNzpz8DUEYHfXKNxikgl3K_co3KmqSlAKjBuPHn1jzXAWa-1qa3JvIbQdBV6eGZ-u7b4ng-93eLY_UhNs3ebW31a71-2_i73G43-4fCISvQQrhKo0cpaRWe1LZoUMRA",
+>>>>>>> dev
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c86a9253-676c-4037-a907-571f24730602",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "03b60ca2-26a2-43ad-b379-01819a0a76b5",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

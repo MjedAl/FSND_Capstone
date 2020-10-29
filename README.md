@@ -1,7 +1,7 @@
 # About the project:
 This is my final project for Udacity full stack nano-degree course, it's a deployed API with Authentication for managing casting agency, you can add movies, actors and manage them based on the role you have.
 
-# Backend Docs:
+# Backend Docs (Endpoints docs and testing):
 [View the README.md within ./backend for more details.](./backend/README.md)
 
 
@@ -10,6 +10,9 @@ This is my final project for Udacity full stack nano-degree course, it's a deplo
 ```
 Direct login link:
 https://udacitycastingagency.eu.auth0.com/authorize?audience=castingAgency&response_type=token&client_id=3ABxPK2MGT0K6vxWuHTqQnaCWBKYMMcX&redirect_uri=http://localhost:5000/
+```
+```
+API link: https://udacity-casting-agency-api.herokuapp.com/
 ```
 ## User 1:
 ```

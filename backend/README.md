@@ -60,6 +60,7 @@ Casting Producer:
 
 ## GET movies
 ### GET <host>/movies
+```
 - Request Arguments: None
 - Response example:
 {
@@ -72,10 +73,11 @@ Casting Producer:
     ],
     "success": true
 }
-
+```
 
 ## DELETE actors
 ### DELETE <host>/actors/<actor_id>
+```
 - Request Arguments: the actor id
 - request example:
 Link:
@@ -85,10 +87,11 @@ Link:
 {
     "success": true
 }
-
+```
 
 ## DELETE movies/<id>
 ### DELETE <host>/movies/<movie_id>
+```
 - Request Arguments: the movie id
 - request example:
 Link:
@@ -98,10 +101,11 @@ Link:
 {
     "success": true
 }
-
+```
 
 ## POST actors
 ### POST <host>/actors
+```
 - Request Arguments: JSON with the name, age, gender, image_link
 - request example:
 {
@@ -115,10 +119,11 @@ Link:
     "actor_id": 2,
     "success": true
 }
-
+```
 
 ## POST movies
 ### POST <host>/movies
+```
 - Request Arguments: JSON with the title, release_date, poster_link
 - request example:
 {
@@ -131,10 +136,11 @@ Link:
     "movie_id": 1,
     "success": true
 }
-
+```
 
 ## PATCH movies
 ### PATCH <host>/movies/<movie_id>
+```
 - Request Arguments: the movie id and JSON with the title, release_date, poster_link
 - request example:
 Link:
@@ -154,10 +160,11 @@ Body:
     },
     "success": true
 }
-
+```
 
 ## PATCH actors
 ### PATCH <host>/actors/<actor_id>
+```
 - Request Arguments: the actor id and JSON with the name, age, gender, image_link
 - request example:
 Link:
@@ -179,3 +186,4 @@ Body:
     },
     "success": true
 }
+```

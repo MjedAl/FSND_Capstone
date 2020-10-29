@@ -1,5 +1,5 @@
 # About the project:
-This is my final project for Udacity full stack nano-degree course, it's a deployed API with Authentication for managing casting agency, you can add movies, actors and manage them base on the role you have.
+This is my final project for Udacity full stack nano-degree course, it's a deployed API with Authentication for managing casting agency, you can add movies, actors and manage them based on the role you have.
 
 # Backend Docs:
 [View the README.md within ./backend for more details.](./backend/README.md)

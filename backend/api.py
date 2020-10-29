@@ -11,6 +11,9 @@ app = Flask(__name__)
 setup_db(app)
 CORS(app)
 
+if __name__ == '__main__':
+    app.run()
+
 db_drop_and_create_all()
 
 @app.route('/actors', methods=['GET'])

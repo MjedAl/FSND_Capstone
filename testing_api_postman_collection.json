@@ -53,14 +53,13 @@
 							]
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/actors",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors"
 							]
@@ -88,14 +87,13 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies"
 							]
@@ -123,14 +121,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies"
 							]
@@ -158,14 +155,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/actors",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors"
 							]
@@ -193,14 +189,13 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/actors/1",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors",
 								"1"
@@ -229,14 +224,13 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies/1",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies",
 								"1"
@@ -265,14 +259,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies/1",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies",
 								"1"
@@ -301,14 +294,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/actors/1",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors",
 								"1"
@@ -323,11 +315,7 @@
 				"bearer": [
 					{
 						"key": "token",
-<<<<<<< HEAD
 						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzExZmM1ZmI2MzAwNzk2NGIxOGUiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTY2MDMyLCJleHAiOjE2MDQwNTI0MzIsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.DvHpGwcae9PRTtJX9qiK_qVWEHyzV7EkA-uQx7rxNC5nKtgBapJHeK4PBL3yULFDrxAAMj5hhO3HujB_u5j9m3q7C3esZf1MbMZGObX9fqI6Tm4ais23wef_9dC8S9nM8aQyU1Qy99YMhf1GgCQy6Z3_LN5tXl1ablhizKNJzKDGpvyoJnRjCNAO0C60UJ-102aV7jE0qWAkhqjHoPzAAjuhZ7xMHpK1vppqVguYJmG0pXZEXN3vOf9KW7N1NUVuiuimHCne8IymZKXiUKNmIQgEj_IFQdDv8HJtRI55nirC-ZHN0PMbN16P8HrN5Pn-p7BQ2Rx3W9G894KfVi9Oiw",
-=======
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzExZmM1ZmI2MzAwNzk2NGIxOGUiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTIxOTYwLCJleHAiOjE2MDM5MjkxNjAsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.T42GLJZIyUmjFWsWdk1dHP2IwLJmlRFEchBVjQHcbWWD_zJyxPok6eo7nS1z_ydgAQvo1M65ECmyZnKZ-ijHHW44R3beoAh3wkSBnTDg6_ewYcu72yM1jJmne7wuPlw6BU7w6Br6TVpJIdrPwtWe49OtKtroNVHQtsqJ20GtmZGGYHI9-XZteewN8T-KsuJ156r7X2IOqXWmMpT50lBsK-QOWs2BQWdyFht1d45n1F2DU1NDCLdsxCGhZQMhKdhps9zZkfGm1wG7dl5mzLfnuhGtTBticQttFBh7HR4aAPUySEI7i4IKLT87HjIQu6VUp5MmKIl7kLYCFvSSUB_EeA",
->>>>>>> dev
 						"type": "string"
 					}
 				]
@@ -379,14 +367,13 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies"
 							]
@@ -423,14 +410,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/actors",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors"
 							]
@@ -458,14 +444,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies"
 							]
@@ -493,14 +478,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/actors",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors"
 							]
@@ -537,14 +521,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/actors/1",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors",
 								"1"
@@ -573,14 +556,13 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies/99",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies/99",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies",
 								"99"
@@ -609,14 +591,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/actors/1",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors",
 								"1"
@@ -645,14 +626,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies/1",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies",
 								"1"
@@ -667,11 +647,7 @@
 				"bearer": [
 					{
 						"key": "token",
-<<<<<<< HEAD
 						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzFjNmM1ZmI2MzAwNzk2NGI1M2YiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTY2MDg1LCJleHAiOjE2MDQwNTI0ODUsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.CGEhzQs5YYcpb0uZ8s1lP1LWeih8UCCp0c5n8qZJoSYXq9_h3kZM3ubgSy0XoptraAhTicAMstbjBLapV-MBYP88X0O3mP88X31G0tjQ27Ddbll7TzWd78OvbVdWYzVUkBoUnjHgvvglvZj2eN6xX0rsaXq004vtYhZ2RjBS8DuBVUoRVW98G5aJhiG7mTACcB8kCK4fRTgygqWhNsiRxLrsfGJEx-iFzo2TtiMDenThxlvX8yNuB4QXzp2mAeVc5AccHh4JxcWE2vVUPm--o_NQLkfPM9p5-37RriXPOyuHLhraptaJzsEltSXiIfnetRq3uFRfc2oExCpW4GILvQ",
-=======
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzFjNmM1ZmI2MzAwNzk2NGI1M2YiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTIyMDc1LCJleHAiOjE2MDM5MjkyNzUsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.Q-dcwEg0_km-kadSR45UT_KC0fHawu2OMVHzIU_gj7R3lAD7TLKb64JS_bFym7bifGZ5_kfzu1tAlr4vJ1SpNOjGC-KxcwTmtRkJPG85Uol6BLVjtD3wQgSVfQMqqa9hQQCkR4IOyODrpzVvfiNEuGSOkEzUoUZSLWpETElao5FiiRhovy1gkrJxtqkcRTRcPiNrfNGiKJ6mfLDNz638p_kXvv2Px7nzBfjUE7t3cTGGGuAvg8-JCHuIpFjS5g_1T0FySWFWOYgcjTiaZf9ig2nj-6sr-8zT-yx7fSnPI5QWMPUscpMgARlr19PRvY8HD4ESu8-AwU10oDXDvNOaUQ",
->>>>>>> dev
 						"type": "string"
 					}
 				]
@@ -732,14 +708,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/movies",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies"
 							],
@@ -793,14 +768,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/actors",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors"
 							]
@@ -828,14 +802,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies"
 							]
@@ -863,14 +836,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/actors",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors"
 							]
@@ -907,14 +879,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/actors/2",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors",
 								"2"
@@ -952,14 +923,13 @@
 							}
 						},
 						"url": {
-							"raw": "127.0.0.1:5000/movies/1",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies",
 								"1"
@@ -988,14 +958,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/actors/2",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/actors/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"actors",
 								"2"
@@ -1024,14 +993,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "127.0.0.1:5000/movies/1",
+							"raw": "https://udacity-casting-agency-api.herokuapp.com/movies/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-casting-agency-api",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"movies",
 								"1"
@@ -1046,11 +1014,7 @@
 				"bearer": [
 					{
 						"key": "token",
-<<<<<<< HEAD
 						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzFkN2ZhMDk1ZjAwNzUyMzY3MTIiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTY2MTE3LCJleHAiOjE2MDQwNTI1MTcsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.qljS08tcUuSwwBP_Q5KM9SsdKXhCkbPlJhUhcgcaCbbiOF9uyA-HirQw3vQH6xrOwmzSqHl1Z1mojedolmhcOMk27Yna6GxsexBAMZO4LM4d_MMoRbh2RL3MWV_PipZWScBt1aZCTcWw3FbB9g_FSKrDq5VLMg5iTO3PY43ynDwf8FX2awqfdGKmtKkIzDA3LFxU3kzUSC1A3BOeZtmQCZtms0JPqh9sV8YkGo-zNU5CTtg6-HPmm5fF0Fe-iwvLBlj_Qy4u_D-XEt0ULDPC2BCX_t4TdAV1RgYp6NYpcEL3s6ob6tRFEGbFY1AzZPElSKA_92_TMbgAu2Nb2dUYzQ",
-=======
-						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRqNWJnQkVaYTY4c0Ewc09tSTZlRSJ9.eyJpc3MiOiJodHRwczovL3VkYWNpdHljYXN0aW5nYWdlbmN5LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1Zjk2YzFkN2ZhMDk1ZjAwNzUyMzY3MTIiLCJhdWQiOiJjYXN0aW5nQWdlbmN5IiwiaWF0IjoxNjAzOTIyMTE4LCJleHAiOjE2MDM5MjkzMTgsImF6cCI6IjNBQnhQSzJNR1QwSzZ2eFd1SFRxUW5hQ1dCS1lNTWNYIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.ZP1P2jW4gF1HCUZ8Br-WCVBn3N2dkMcVG51qAmqfx8zKeaeNqshfjjBXT4cIY_PQy5_1vfnoZyK66F3GdFsp5u5L3dauHR5oBumSgWtgY3GT_1u2WbL4jKhysEo9ih3f83WwgJLeWdoqknvh4vYCOfa1ce54NLYYSHizDRUplojCid4VuU2eW-4rXS6xvYqZmHc2BLmulHUG3aulcSQSeB_GNzpz8DUEYHfXKNxikgl3K_co3KmqSlAKjBuPHn1jzXAWa-1qa3JvIbQdBV6eGZ-u7b4ng-93eLY_UhNs3ebW31a71-2_i73G43-4fCISvQQrhKo0cpaRWe1LZoUMRA",
->>>>>>> dev
 						"type": "string"
 					}
 				]

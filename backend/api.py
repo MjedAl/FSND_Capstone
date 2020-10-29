@@ -31,13 +31,7 @@ def get_actors(payload):
 @requires_auth('get:movies')
 def get_movies(payload):
     try:
-<<<<<<< HEAD
         movies = Movie.query.all()
-=======
-        app.logger.warning('test')
-        movies = Movie.query.all()
-        app.logger.warning(movies)
->>>>>>> dev
         if movies is None:
             abort(404)
         return jsonify({
@@ -45,10 +39,6 @@ def get_movies(payload):
             'actors': [movie.short() for movie in movies]
         })
     except Exception as e:
-<<<<<<< HEAD
-=======
-        app.logger.warning(str(e))
->>>>>>> dev
         abort(500)
 
 @app.route('/movies/<movie_id>', methods=['DELETE'])
@@ -82,10 +72,6 @@ def delete_actors(payload, actor_id):
 @app.route('/actors', methods=['POST'])
 @requires_auth('post:actors')
 def post_actors(payload):
-<<<<<<< HEAD
-=======
-    app.logger.warning(request)
->>>>>>> dev
     JSON_body = request.get_json()
     name = JSON_body.get('name')
     age = JSON_body.get('age')
@@ -133,7 +119,7 @@ def update_actor(payload, actor_id):
         if image_link is not None:
             actor.image_link = image_link
         if gender is not None:
-            actor.gender = gender                        
+            actor.gender = gender
         actor.update()
         return jsonify({
             'success': True,
@@ -156,7 +142,7 @@ def update_movies(payload, movie_id):
         if release_date is not None:
             movie.release_date = release_date
         if poster_link is not None:
-            movie.poster_link = poster_link                      
+            movie.poster_link = poster_link
         movie.update()
         return jsonify({
             'success': True,

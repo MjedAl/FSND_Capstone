@@ -3,14 +3,20 @@ from sqlalchemy import Column, String, Integer
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-DB_HOST = os.getenv('DB_HOST', 'localhost:5432')
-DB_USER = os.getenv('DB_USER', 'postgres')
-DB_PASSWORD = os.getenv('DB_PASSWORD', 'admin')
-DB_NAME = os.getenv('DB_NAME', 'capstone')
-SQLALCHEMY_DATABASE_URI = 'postgresql://{}:{}@{}/{}'.format(DB_USER,
-                                                            DB_PASSWORD,
-                                                            DB_HOST,
-                                                            DB_NAME)
+# Uncomment when you want to use real database
+# DB_HOST = os.getenv('DB_HOST', 'localhost:5432')
+# DB_USER = os.getenv('DB_USER', 'postgres')
+# DB_PASSWORD = os.getenv('DB_PASSWORD', 'admin')
+# DB_NAME = os.getenv('DB_NAME', 'capstone')
+# SQLALCHEMY_DATABASE_URI = 'postgresql://{}:{}@{}/{}'.format(DB_USER,
+#                                                             DB_PASSWORD,
+#                                                             DB_HOST,
+#                                                             DB_NAME)
+
+database_filename = "database.db"
+project_dir = os.path.dirname(os.path.abspath(__file__))
+SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(os.path.join(project_dir, database_filename))
+
 
 db = SQLAlchemy()
 

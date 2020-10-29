@@ -31,9 +31,7 @@ def get_actors(payload):
 @requires_auth('get:movies')
 def get_movies(payload):
     try:
-        app.logger.warning('test')
         movies = Movie.query.all()
-        app.logger.warning(movies)
         if movies is None:
             abort(404)
         return jsonify({
@@ -41,7 +39,6 @@ def get_movies(payload):
             'actors': [movie.short() for movie in movies]
         })
     except Exception as e:
-        app.logger.warning(str(e))
         abort(500)
 
 @app.route('/movies/<movie_id>', methods=['DELETE'])
@@ -75,7 +72,6 @@ def delete_actors(payload, actor_id):
 @app.route('/actors', methods=['POST'])
 @requires_auth('post:actors')
 def post_actors(payload):
-    app.logger.warning(request)
     JSON_body = request.get_json()
     name = JSON_body.get('name')
     age = JSON_body.get('age')
